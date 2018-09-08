@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SHS Student Registration</string>
+    <string-array name="str2">
+        <item>ABM</item>
+        <item>BSIT</item>
+        <item>BSCS</item>
+        <item>BSCPE</item>
+        <item>MSIT</item>
+        <item>MSCS</item>
+    </string-array>
+    <string name="str">Academic Program</string>
+    <string name="str1">Last Name</string>
+    <string name="str2">First Name</string>
+    <string name="str3">Middle Name</string>
+    <string name="str4">Gender</string>
+    <string name="str5">Requirements</string>
+
+</resources>
