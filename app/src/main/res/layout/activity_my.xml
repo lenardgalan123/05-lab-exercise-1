@@ -1,122 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/str"
-        android:textSize="17dp"
-        android:id="@+id/ap"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:entries="@array/str2"
-        android:drawSelectorOnTop="true"/>
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/str1"
-        android:layout_below="@+id/ap"
-        android:textSize="20dp"
-        android:id="@+id/ln"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ln"
-        android:id="@+id/txt"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/str2"
-        android:layout_below="@+id/txt"
-        android:textSize="20dp"
-        android:id="@+id/fn"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fn"
-        android:id="@+id/txt1"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/str3"
-        android:layout_below="@+id/txt1"
-        android:textSize="20dp"
-        android:id="@+id/mn"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mn"
-        android:id="@+id/txt2"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/str4"
-        android:layout_below="@+id/txt2"
-        android:textSize="20dp"
-        android:id="@+id/g"/>
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/g"
-        android:orientation="horizontal"
-        android:id="@+id/rb">
-        <RadioButton
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:hint="Male"/>
-        <RadioButton
+            android:hint="@string/str"
+            android:textSize="17dp"
+            android:id="@+id/ap"/>
+        <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Female"/>
-    </RadioGroup>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/str5"
-        android:layout_below="@+id/rb"
-        android:textSize="20dp"
-        android:id="@+id/r"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Original Report Card (Form 138)"
-        android:id="@+id/cb"
-        android:layout_below="@id/r"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="NSO copy of Birth Certificate"
-        android:id="@+id/cb1"
-        android:layout_below="@id/cb"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Certificate of Good Moral Character"
-        android:id="@+id/cb2"
-        android:layout_below="@id/cb1"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Certification of Junior High School Completion"
-        android:id="@+id/cb3"
-        android:layout_below="@id/cb2"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/cb3"
-        android:onClick="onClick"
-        android:hint="Submit"/>
+            android:layout_alignParentRight="true"
+            android:entries="@array/str2"
+            android:drawSelectorOnTop="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str1"
+            android:layout_below="@+id/ap"
+            android:textSize="20dp"
+            android:id="@+id/ln"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln"
+            android:id="@+id/txt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str2"
+            android:layout_below="@+id/txt"
+            android:textSize="20dp"
+            android:id="@+id/fn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fn"
+            android:id="@+id/txt1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str3"
+            android:layout_below="@+id/txt1"
+            android:textSize="20dp"
+            android:id="@+id/mn"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mn"
+            android:id="@+id/txt2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str4"
+            android:layout_below="@+id/txt2"
+            android:textSize="20dp"
+            android:id="@+id/g"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/g"
+            android:orientation="horizontal"
+            android:id="@+id/rb">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Male"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Female"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str5"
+            android:layout_below="@+id/rb"
+            android:textSize="20dp"
+            android:id="@+id/r"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Original Report Card (Form 138)"
+            android:id="@+id/cb"
+            android:layout_below="@id/r"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="NSO copy of Birth Certificate"
+            android:id="@+id/cb1"
+            android:layout_below="@id/cb"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Certificate of Good Moral Character"
+            android:id="@+id/cb2"
+            android:layout_below="@id/cb1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Certification of Junior High School Completion"
+            android:id="@+id/cb3"
+            android:layout_below="@id/cb2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/cb3"
+            android:onClick="onClick"
+            android:hint="Submit"/>
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
